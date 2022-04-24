@@ -1,15 +1,18 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Habit :name="Learn something new"></Habit>
+  <Habit :name="Learn something new 2"></Habit>  
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Habit from './components/Habit.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld, Habit
   }
 }
 </script>
